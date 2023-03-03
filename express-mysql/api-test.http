@@ -1,0 +1,39 @@
+GET http://localhost:8080/categories
+
+###
+
+POST http://localhost:8080/categories
+Content-type: application/json
+
+{
+    "name":"Technology",
+    "slug":"tech",
+    "imgUrl":""
+}
+
+###
+
+GET http://localhost:8080/categories/3
+
+###
+
+DELETE http://localhost:8080/
+Content-type: application/json
+
+{
+    "id":"17"
+}
+
+###
+
+PUT http://localhost:8080/
+Content-type: application/json
+
+{
+    "id":""
+    "name":"Technology",
+    "slug":"tech",
+    "imgUrl":""
+}
+
+###
