@@ -19,7 +19,7 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   const { name, slug, imageUrl } = req.body;
   try {
-    res.json(await createCategory(name, slug, imgUrl));
+    res.json(await createCategory(name, slug, imageUrl));
   } catch (err) {
     res.status(400).json("Something went wrong");
   }
